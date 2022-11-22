@@ -18,8 +18,8 @@ void setup()
   //If we increase the PWM value then it rotates faster and our robot is not controlled in that speed and goes out of line.
   //For that we need to increase the frequency of analogWrite.
   //Below line is important to change the frequency of PWM signal on pin D5 and D6
-  //This sets frequecny as 7812.5 hz.
   //Because of this, motor runs in controlled manner (lower speed) at high PWM value.
+  //This sets frequecny as 7812.5 hz.
   
   TCCR0B = TCCR0B & B11111000 | B00000010 ;
   
